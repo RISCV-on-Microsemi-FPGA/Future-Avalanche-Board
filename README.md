@@ -1,4 +1,4 @@
-## PolarFire Evaluation Kit RISC-V Designs
+## Future-Avalanche-Board RISC-V Designs
 
 Sample Mi-V Libero projects for PolarFire FPGA designs for Future Avalanche Board
 
