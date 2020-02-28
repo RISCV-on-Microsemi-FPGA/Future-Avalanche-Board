@@ -1,100 +1,0 @@
-INFO: Reading User SDC file C:\GitHub-LSRAM-12.3\Future-Avalanche-Board\Libero_Projects\MiV_AXI_PF_Avalanche_ES\constraint\BaseDesign_derived_constraints.sdc.
-INFO: Reading User SDC file C:\GitHub-LSRAM-12.3\Future-Avalanche-Board\Libero_Projects\MiV_AXI_PF_Avalanche_ES\constraint\io_jtag_constraints.sdc.
-INFO: The option "Abort flow if errors are found in SDC" is turned ON in Project Settings> Design flow page. The Place & Route tool will fail if errors are found in associated SDC files. Please uncheck the option to ignore the errors and continue running the tool.
-
-No errors or warnings found.
-INFO: The option "Abort flow if errors are found in PDC" is turned ON in Project Settings> Design flow page. The Place & Route tool will fail if errors are found in associated PDC files. Please uncheck the option to ignore the errors and continue running the tool
-***** Place and Route Configurations *****
-Timing-driven            : ON
-Power-driven             : OFF
-I/O Register Combining   : ON
-Global Pins Demotion     : ON
-Driver Replication       : OFF
-High-effort              : ON
-Repair min-delay         : ON
-Incremental              : OFF
-Inter-clock optimization : ON
-TDPR scenario            : place_and_route
-
-INFO: Reading User PDC file C:\GitHub-LSRAM-12.3\Future-Avalanche-Board\Libero_Projects\MiV_AXI_PF_Avalanche_ES\constraint\io\io_constraints.pdc. 0 error(s) and 0 warning(s)
-INFO: Reading User PDC file C:\GitHub-LSRAM-12.3\Future-Avalanche-Board\Libero_Projects\MiV_AXI_PF_Avalanche_ES\constraint\fp\ccc_fp.pdc. 0 error(s) and 0 warning(s)
-
- Running Timing based Global Demotion. 
-        Demoted 0 global pins.
-
- Timing based Global Demotion completed successfully. 
-
-Running the I/O Bank and Globals Assigner.
-Info:  I/O Bank and Globals Assigner identified 9 fixed I/O macros, 0 unfixed I/O macros
-Info:  I/O Bank and Globals Assigner identified bank 'Bank3' as being fixed at VCCI:3.30V VCCR:n/a
-Info:  I/O Bank and Globals Assigner identified bank 'Bank5' as being fixed at VCCI:3.30V VCCR:n/a
-Info:  I/O Bank and Globals Assigner detected (2) out of (8) I/O Bank(s) with locked I/O technologies.
-
-I/O Bank and Globals Assigner completed successfully.
-Total time spent in I/O Bank and Globals Assigner: 5 seconds
-
-Placer V5.0 - 12.800.0 
-Design: BaseDesign                      Started: Fri Feb 28 12:18:18 2020
-
-Initializing High-Effort Timing-Driven Placement ...
-Clustering ...
-Placing ...
-Improving placement ...
-End of placement.
-
-Placer Runtime Summary   :
-Clustering (1 pass)      : 10 seconds
-Placement                : 40 seconds
-Improvement              : 65 seconds
-
-Placer completed successfully.
-
-Design: BaseDesign                      
-Finished: Fri Feb 28 12:21:00 2020
-Total CPU Time:     00:03:25            Total Elapsed Time: 00:02:42
-Total Memory Usage: 1489.9 Mbytes
-                        o - o - o - o - o - o
-
-
-Router 
-Design: C:\GitHub-LSRAM-12.3\Future-Avalanche-Board\Libero_Projects\MiV_AXI_PF_Avalanche_ES\designer\BaseDesign\BaseDesignStarted: Fri Feb 28 12:21:18 2020
-
-
-Router completed successfully.
-
-Design: C:\GitHub-LSRAM-12.3\Future-Avalanche-Board\Libero_Projects\MiV_AXI_PF_Avalanche_ES\designer\BaseDesign\BaseDesign
-Finished: Fri Feb 28 12:22:24 2020
-Total CPU Time:     00:01:09            Total Elapsed Time: 00:01:06
-Total Memory Usage: 5432.2 Mbytes
-                        o - o - o - o - o - o
-
-Info: Iteration 1:
-  Worst minimum delay slack: -1.912 ns
-  Total violating paths eligible for improvement: 53
-  Total violating paths improved: 53
-Info: Iteration 2:
-  Worst minimum delay slack: -0.94 ns
-  Total violating paths eligible for improvement: 53
-  Total violating paths improved: 53
-Info: Iteration 3:
-  Worst minimum delay slack: -0.406 ns
-  Total violating paths eligible for improvement: 34
-  Total violating paths improved: 34
-Info: Iteration 4:
-  Worst minimum delay slack: -0.055 ns
-  Total violating paths eligible for improvement: 2
-  Total violating paths improved: 2
-Info: Iteration 5:
-  Worst minimum delay slack: 
-  Total violating paths eligible for improvement: 0
-  Total violating paths improved: 0
-Resource Usage
-+---------------+-------+--------+------------+
-| Type          | Used  | Total  | Percentage |
-+---------------+-------+--------+------------+
-| 4LUT          | 24731 | 299544 | 8.26       |
-| DFF           | 16099 | 299544 | 5.37       |
-| I/O Register  | 0     | 242    | 0.00       |
-| Logic Element | 27679 | 299544 | 9.24       |
-+---------------+-------+--------+------------+
-

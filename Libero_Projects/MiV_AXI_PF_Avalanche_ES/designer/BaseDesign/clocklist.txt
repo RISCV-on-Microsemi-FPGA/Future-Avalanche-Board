@@ -1,2 +1,0 @@
-"PF_CCC_0_inst_0/PF_CCC_0_0/pll_inst_0:OUT0",,"PF_CCC_0_inst_0/PF_CCC_0_0/pll_inst_0:OUT0","PF_CCC_0_inst_0/PF_CCC_0_0/pll_inst_0:OUT0"
-"PF_OSC_0_inst_0/PF_OSC_0_0/I_OSC_160:CLK",,"PF_OSC_0_inst_0/PF_OSC_0_0/I_OSC_160:CLK","PF_OSC_0_inst_0/PF_OSC_0_0/I_OSC_160:CLK"
