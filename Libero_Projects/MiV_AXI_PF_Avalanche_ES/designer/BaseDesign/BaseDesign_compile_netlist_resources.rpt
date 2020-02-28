@@ -1,0 +1,188 @@
+Compile Report
+Microsemi Corporation - Microsemi Libero Software Release v12.3 (Version 12.800.0.16)
+Date: Fri Feb 28 12:17:11 2020
+
+Device Selection
++------------------------+-------------+
+| Family                 | PolarFire   |
+| Device                 | MPF300T_ES  |
+| Package                | FCG484      |
+| Speed Grade            | STD         |
+| Core Voltage           | 1.0V        |
+| Part Range             | IND         |
+| Default I/O technology | LVCMOS 1.8V |
+| Restrict Probe Pins    | Yes         |
++------------------------+-------------+
+
+Source Files
++---------+-------------------------------------------------------------------------------------------------------------+
+| Topcell | BaseDesign                                                                                                  |
+| Format  | Verilog                                                                                                     |
+| Source  | C:\GitHub-LSRAM-12.3\Future-Avalanche-Board\Libero_Projects\MiV_AXI_PF_Avalanche_ES\synthesis\BaseDesign.vm |
++---------+-------------------------------------------------------------------------------------------------------------+
+
+Options
++----------------------------------------------------+----+
+| Limit the number of high fanout nets to display to | 10 |
++----------------------------------------------------+----+
+
+Resource Usage
++---------------------------+-------+--------+------------+
+| Type                      | Used  | Total  | Percentage |
++---------------------------+-------+--------+------------+
+| 4LUT                      | 24392 | 299544 | 8.14       |
+| DFF                       | 16099 | 299544 | 5.37       |
+| I/O Register              | 0     | 732    | 0.00       |
+| User I/O                  | 9     | 244    | 3.69       |
+| -- Single-ended I/O       | 9     | 244    | 3.69       |
+| -- Differential I/O Pairs | 0     | 122    | 0.00       |
+| uSRAM                     | 30    | 2772   | 1.08       |
+| LSRAM                     | 138   | 952    | 14.50      |
+| Math                      | 2     | 924    | 0.22       |
+| H-Chip Global             | 5     | 48     | 10.42      |
+| PLL                       | 1     | 8      | 12.50      |
+| DLL                       | 0     | 8      | 0.00       |
+| CRN_INT                   | 1     | 24     | 4.17       |
+| UJTAG                     | 1     | 1      | 100.00     |
+| INIT                      | 1     | 1      | 100.00     |
+| OSC_RC160MHZ              | 1     | 1      | 100.00     |
+| Transceiver Lanes         | 0     | 8      | 0.00       |
+| Transceiver PCIe          | 0     | 2      | 0.00       |
+| ICB_CLKINT                | 3     | 72     | 4.17       |
++---------------------------+-------+--------+------------+
+
+Detailed Logic Resource Usage
++-----------------------+-------+-------+
+| Type                  | 4LUT  | DFF   |
++-----------------------+-------+-------+
+| Fabric Logic          | 18992 | 10699 |
+| uSRAM Interface Logic | 360   | 360   |
+| LSRAM Interface Logic | 4968  | 4968  |
+| Math Interface Logic  | 72    | 72    |
+| Total Used            | 24392 | 16099 |
++-----------------------+-------+-------+
+
+Detailed Carry Chains Resource Usage
++--------+------+
+| Length | Used |
+| 6      | 2    |
+| 7      | 2    |
+| 8      | 5    |
+| 10     | 8    |
+| 11     | 8    |
+| 14     | 2    |
+| 17     | 4    |
+| 30     | 2    |
+| 32     | 7    |
+| 33     | 9    |
+| 49     | 1    |
+| 64     | 1    |
+| 65     | 1    |
+| Total  | 52   |
++--------+------+
+
+Detailed 4LUT Groups Resource Usage
++--------+------+
+| Length | Used |
+| 2      | 112  |
+| 5      | 406  |
+| Total  | 518  |
++--------+------+
+
+Detailed Math Chains Resource Usage
++--------+------+
+| Length | Used |
+| 2      | 1    |
+| Total  | 1    |
++--------+------+
+
+I/O Function
++-------------------------------+--------------+-------------+-----------------+
+| Type                          | w/o register | w/ register | w/ DDR register |
++-------------------------------+--------------+-------------+-----------------+
+| Input I/O                     | 4            | 0           | 0               |
+| Output I/O                    | 5            | 0           | 0               |
+| Bidirectional I/O             | 0            | 0           | 0               |
+| Differential Input I/O Pairs  | 0            | 0           | 0               |
+| Differential Output I/O Pairs | 0            | 0           | 0               |
++-------------------------------+--------------+-------------+-----------------+
+
+Nets assigned to chip global resources
++--------+---------+----------------------------------------------------------------------------------------+
+| Fanout | Type    | Name                                                                                   |
++--------+---------+----------------------------------------------------------------------------------------+
+| 10805  | INT_NET | Net   : PF_CCC_0_OUT0_FABCLK_0                                                         |
+|        |         | Driver: PF_CCC_0_inst_0/PF_CCC_0_0/clkint_0/U0_RGB1                                    |
+|        |         | Source: NETLIST                                                                        |
+| 1628   | INT_NET | Net   : CoreRESET_PF_0_inst_0/CoreRESET_PF_0_0/un1_FABRIC_RESET_N_arst                 |
+|        |         | Driver: CoreRESET_PF_0_inst_0/CoreRESET_PF_0_0/dff_15_rep_RNIIOB1_0/U0_RGB1            |
+|        |         | Source: NETLIST                                                                        |
+| 311    | INT_NET | Net   : CoreJTAGDebug_0_TGT_TCK_0_i                                                    |
+|        |         | Driver: CoreJTAGDebug_0_inst_0/CoreJTAGDebug_0_0/genblk3.genblk1.TGT_TCK_GLB/U0_RGB1   |
+|        |         | Source: NETLIST                                                                        |
+| 18     | INT_NET | Net   : CoreJTAGDebug_0_inst_0/CoreJTAGDebug_0_0/iUDRCK                                |
+|        |         | Driver: CoreJTAGDebug_0_inst_0/CoreJTAGDebug_0_0/iUDRCK_inferred_clock_RNISJ9E/U0_RGB1 |
+|        |         | Source: NETLIST                                                                        |
+| 1      | INT_NET | Net   : PF_OSC_0_RCOSC_160MHZ_GL                                                       |
+|        |         | Driver: PF_OSC_0_inst_0/PF_OSC_0_0/I_OSC_160_INT/U0_RGB1                               |
+|        |         | Source: NETLIST                                                                        |
++--------+---------+----------------------------------------------------------------------------------------+
+
+Nets assigned to row global resources
++--------+------+------+
+| Fanout | Type | Name |
++--------+------+------+
++--------+------+------+
+
+High fanout nets
++--------+---------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Fanout | Type    | Name                                                                                                                                                                             |
++--------+---------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| 788    | INT_NET | Net   : MiV_RV32IMA_L1_AXI_0_inst_0/MiV_RV32IMA_L1_AXI_0_0/ChiselTop0/reset_arst                                                                                                 |
+|        |         | Driver: MiV_RV32IMA_L1_AXI_0_inst_0/MiV_RV32IMA_L1_AXI_0_0/ChiselTop0/debug_1/dmOuter/dmiXbar/reset                                                                              |
+| 617    | INT_NET | Net   : MiV_RV32IMA_L1_AXI_0_inst_0/MiV_RV32IMA_L1_AXI_0_0/ChiselTop0/debug_1/dmInner/N_14760_i                                                                                  |
+|        |         | Driver: MiV_RV32IMA_L1_AXI_0_inst_0/MiV_RV32IMA_L1_AXI_0_0/ChiselTop0/debug_1/dmInner/dmactiveSync/MIV_RV32IMA_L1_AXI_ASYNC_RESET_SYNCHRONIZER_SHIFT_REG_W1_D3_I0/sync_0/reg_0/q |
+| 322    | INT_NET | Net   : PF_SRAM_0_inst_0/mem_addr[10]                                                                                                                                            |
+|        |         | Driver: PF_SRAM_0_inst_0/COREAHBLSRAM_PF_0/U_PF_SRAM_0_COREAHBLSRAM_PF_0_AHBLSramIf/HADDR_d[12]                                                                                  |
+| 322    | INT_NET | Net   : PF_SRAM_0_inst_0/mem_addr[9]                                                                                                                                             |
+|        |         | Driver: PF_SRAM_0_inst_0/COREAHBLSRAM_PF_0/U_PF_SRAM_0_COREAHBLSRAM_PF_0_AHBLSramIf/HADDR_d[11]                                                                                  |
+| 303    | INT_NET | Net   : MiV_RV32IMA_L1_AXI_0_inst_0/MiV_RV32IMA_L1_AXI_0_0/ChiselTop0/MIV_RV32IMA_L1_AXI_AXI4DEINTERLEAVER/MIV_RV32IMA_L1_AXI_QUEUE_4/value_1[1]                                 |
+|        |         | Driver: MiV_RV32IMA_L1_AXI_0_inst_0/MiV_RV32IMA_L1_AXI_0_0/ChiselTop0/MIV_RV32IMA_L1_AXI_AXI4DEINTERLEAVER/MIV_RV32IMA_L1_AXI_QUEUE_4/value_1[1]                                 |
+| 303    | INT_NET | Net   : MiV_RV32IMA_L1_AXI_0_inst_0/MiV_RV32IMA_L1_AXI_0_0/ChiselTop0/MIV_RV32IMA_L1_AXI_AXI4DEINTERLEAVER/MIV_RV32IMA_L1_AXI_QUEUE_3/value_1[1]                                 |
+|        |         | Driver: MiV_RV32IMA_L1_AXI_0_inst_0/MiV_RV32IMA_L1_AXI_0_0/ChiselTop0/MIV_RV32IMA_L1_AXI_AXI4DEINTERLEAVER/MIV_RV32IMA_L1_AXI_QUEUE_3/value_1[1]                                 |
+| 303    | INT_NET | Net   : MiV_RV32IMA_L1_AXI_0_inst_0/MiV_RV32IMA_L1_AXI_0_0/ChiselTop0/MIV_RV32IMA_L1_AXI_AXI4DEINTERLEAVER/MIV_RV32IMA_L1_AXI_QUEUE_2/value_1[1]                                 |
+|        |         | Driver: MiV_RV32IMA_L1_AXI_0_inst_0/MiV_RV32IMA_L1_AXI_0_0/ChiselTop0/MIV_RV32IMA_L1_AXI_AXI4DEINTERLEAVER/MIV_RV32IMA_L1_AXI_QUEUE_2/value_1[1]                                 |
+| 303    | INT_NET | Net   : MiV_RV32IMA_L1_AXI_0_inst_0/MiV_RV32IMA_L1_AXI_0_0/ChiselTop0/MIV_RV32IMA_L1_AXI_AXI4DEINTERLEAVER/MIV_RV32IMA_L1_AXI_QUEUE_1/value_1[1]                                 |
+|        |         | Driver: MiV_RV32IMA_L1_AXI_0_inst_0/MiV_RV32IMA_L1_AXI_0_0/ChiselTop0/MIV_RV32IMA_L1_AXI_AXI4DEINTERLEAVER/MIV_RV32IMA_L1_AXI_QUEUE_1/value_1[1]                                 |
+| 296    | INT_NET | Net   : MiV_RV32IMA_L1_AXI_0_inst_0/MiV_RV32IMA_L1_AXI_0_0/ChiselTop0/MIV_RV32IMA_L1_AXI_AXI4DEINTERLEAVER/MIV_RV32IMA_L1_AXI_QUEUE/value_1[1]                                   |
+|        |         | Driver: MiV_RV32IMA_L1_AXI_0_inst_0/MiV_RV32IMA_L1_AXI_0_0/ChiselTop0/MIV_RV32IMA_L1_AXI_AXI4DEINTERLEAVER/MIV_RV32IMA_L1_AXI_QUEUE/value_1[1]                                   |
+| 256    | INT_NET | Net   : PF_SRAM_0_inst_0/mem_addr[8]                                                                                                                                             |
+|        |         | Driver: PF_SRAM_0_inst_0/COREAHBLSRAM_PF_0/U_PF_SRAM_0_COREAHBLSRAM_PF_0_AHBLSramIf/HADDR_d[10]                                                                                  |
++--------+---------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+High fanout nets (through buffer trees)
++--------+---------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Fanout | Type    | Name                                                                                                                                                                             |
++--------+---------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| 788    | INT_NET | Net   : MiV_RV32IMA_L1_AXI_0_inst_0/MiV_RV32IMA_L1_AXI_0_0/ChiselTop0/reset_arst                                                                                                 |
+|        |         | Driver: MiV_RV32IMA_L1_AXI_0_inst_0/MiV_RV32IMA_L1_AXI_0_0/ChiselTop0/debug_1/dmOuter/dmiXbar/reset                                                                              |
+| 617    | INT_NET | Net   : MiV_RV32IMA_L1_AXI_0_inst_0/MiV_RV32IMA_L1_AXI_0_0/ChiselTop0/debug_1/dmInner/N_14760_i                                                                                  |
+|        |         | Driver: MiV_RV32IMA_L1_AXI_0_inst_0/MiV_RV32IMA_L1_AXI_0_0/ChiselTop0/debug_1/dmInner/dmactiveSync/MIV_RV32IMA_L1_AXI_ASYNC_RESET_SYNCHRONIZER_SHIFT_REG_W1_D3_I0/sync_0/reg_0/q |
+| 322    | INT_NET | Net   : PF_SRAM_0_inst_0/mem_addr[10]                                                                                                                                            |
+|        |         | Driver: PF_SRAM_0_inst_0/COREAHBLSRAM_PF_0/U_PF_SRAM_0_COREAHBLSRAM_PF_0_AHBLSramIf/HADDR_d[12]                                                                                  |
+| 322    | INT_NET | Net   : PF_SRAM_0_inst_0/mem_addr[9]                                                                                                                                             |
+|        |         | Driver: PF_SRAM_0_inst_0/COREAHBLSRAM_PF_0/U_PF_SRAM_0_COREAHBLSRAM_PF_0_AHBLSramIf/HADDR_d[11]                                                                                  |
+| 303    | INT_NET | Net   : MiV_RV32IMA_L1_AXI_0_inst_0/MiV_RV32IMA_L1_AXI_0_0/ChiselTop0/MIV_RV32IMA_L1_AXI_AXI4DEINTERLEAVER/MIV_RV32IMA_L1_AXI_QUEUE_4/value_1[1]                                 |
+|        |         | Driver: MiV_RV32IMA_L1_AXI_0_inst_0/MiV_RV32IMA_L1_AXI_0_0/ChiselTop0/MIV_RV32IMA_L1_AXI_AXI4DEINTERLEAVER/MIV_RV32IMA_L1_AXI_QUEUE_4/value_1[1]                                 |
+| 303    | INT_NET | Net   : MiV_RV32IMA_L1_AXI_0_inst_0/MiV_RV32IMA_L1_AXI_0_0/ChiselTop0/MIV_RV32IMA_L1_AXI_AXI4DEINTERLEAVER/MIV_RV32IMA_L1_AXI_QUEUE_3/value_1[1]                                 |
+|        |         | Driver: MiV_RV32IMA_L1_AXI_0_inst_0/MiV_RV32IMA_L1_AXI_0_0/ChiselTop0/MIV_RV32IMA_L1_AXI_AXI4DEINTERLEAVER/MIV_RV32IMA_L1_AXI_QUEUE_3/value_1[1]                                 |
+| 303    | INT_NET | Net   : MiV_RV32IMA_L1_AXI_0_inst_0/MiV_RV32IMA_L1_AXI_0_0/ChiselTop0/MIV_RV32IMA_L1_AXI_AXI4DEINTERLEAVER/MIV_RV32IMA_L1_AXI_QUEUE_2/value_1[1]                                 |
+|        |         | Driver: MiV_RV32IMA_L1_AXI_0_inst_0/MiV_RV32IMA_L1_AXI_0_0/ChiselTop0/MIV_RV32IMA_L1_AXI_AXI4DEINTERLEAVER/MIV_RV32IMA_L1_AXI_QUEUE_2/value_1[1]                                 |
+| 303    | INT_NET | Net   : MiV_RV32IMA_L1_AXI_0_inst_0/MiV_RV32IMA_L1_AXI_0_0/ChiselTop0/MIV_RV32IMA_L1_AXI_AXI4DEINTERLEAVER/MIV_RV32IMA_L1_AXI_QUEUE_1/value_1[1]                                 |
+|        |         | Driver: MiV_RV32IMA_L1_AXI_0_inst_0/MiV_RV32IMA_L1_AXI_0_0/ChiselTop0/MIV_RV32IMA_L1_AXI_AXI4DEINTERLEAVER/MIV_RV32IMA_L1_AXI_QUEUE_1/value_1[1]                                 |
+| 296    | INT_NET | Net   : MiV_RV32IMA_L1_AXI_0_inst_0/MiV_RV32IMA_L1_AXI_0_0/ChiselTop0/MIV_RV32IMA_L1_AXI_AXI4DEINTERLEAVER/MIV_RV32IMA_L1_AXI_QUEUE/value_1[1]                                   |
+|        |         | Driver: MiV_RV32IMA_L1_AXI_0_inst_0/MiV_RV32IMA_L1_AXI_0_0/ChiselTop0/MIV_RV32IMA_L1_AXI_AXI4DEINTERLEAVER/MIV_RV32IMA_L1_AXI_QUEUE/value_1[1]                                   |
+| 256    | INT_NET | Net   : PF_SRAM_0_inst_0/mem_addr[8]                                                                                                                                             |
+|        |         | Driver: PF_SRAM_0_inst_0/COREAHBLSRAM_PF_0/U_PF_SRAM_0_COREAHBLSRAM_PF_0_AHBLSramIf/HADDR_d[10]                                                                                  |
++--------+---------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+

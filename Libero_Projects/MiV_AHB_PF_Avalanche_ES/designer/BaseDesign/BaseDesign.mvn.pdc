@@ -1,0 +1,38 @@
+# Microsemi Physical design constraints file
+
+# Version: v12.3 12.800.0.16
+
+# Design Name:  
+
+# Input Netlist Format: EDIF 
+
+# Family: PolarFire , Die: MPF300T_ES , Package: FCG484 , Speed grade: STD 
+
+# Date generated: Tue Feb 25 13:19:43 2020 
+
+
+#
+# IO banks setting
+#
+
+set_iobank -bank_name Bank3 -vcci 3.30 -fixed true
+
+#
+# Region constraints
+#
+
+
+#
+# I/O constraints
+#
+
+set_io -port_name TCK -DIRECTION INPUT -pin_name F8
+set_io -port_name TDI -DIRECTION INPUT -pin_name G8
+set_io -port_name TDO -DIRECTION OUTPUT -pin_name F6
+set_io -port_name TMS -DIRECTION INPUT -pin_name F7
+set_io -port_name TRSTB -DIRECTION INPUT -pin_name G7
+
+#
+# Core cell constraints
+#
+

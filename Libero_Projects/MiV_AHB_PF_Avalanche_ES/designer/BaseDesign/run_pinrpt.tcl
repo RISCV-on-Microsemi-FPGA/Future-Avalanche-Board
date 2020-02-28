@@ -1,0 +1,11 @@
+DESIGN=BaseDesign
+DESDIR=C:\GitHub-LSRAM-12.3\Future-Avalanche-Board\Libero_Projects\MiV_AHB_PF_Avalanche_ES\designer\BaseDesign
+TARGET_DIR=C:\GitHub-LSRAM-12.3\Future-Avalanche-Board\Libero_Projects\MiV_AHB_PF_Avalanche_ES\designer\BaseDesign
+FAM=PolarFire
+DIE=PA5M300T_ES
+PACKAGE=fcg484
+PINRPT_BY_NAME=1
+PINRPT_BY_NUMBER=1
+PINRPT_BOARDLAYOUT=1
+BANK_REPORT=1
+IOREG_REPORT=1

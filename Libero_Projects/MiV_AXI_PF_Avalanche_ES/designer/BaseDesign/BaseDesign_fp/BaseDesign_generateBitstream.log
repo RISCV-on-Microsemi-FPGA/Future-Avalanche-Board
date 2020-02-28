@@ -1,0 +1,22 @@
+Software Version: 12.800.0.16
+Opened 'C:\GitHub-LSRAM-12.3\Future-Avalanche-Board\Libero_Projects\MiV_AXI_PF_Avalanche_ES\designer\BaseDesign\BaseDesign_fp\BaseDesign.pro'
+The 'open_project' command succeeded.
+PDB file 'C:\GitHub-LSRAM-12.3\Future-Avalanche-Board\Libero_Projects\MiV_AXI_PF_Avalanche_ES\designer\BaseDesign\BaseDesign.pdb' has been loaded successfully.
+DESIGN : BaseDesign;  CHECKSUM : C989;  PDB_VERSION : 1.9
+Load Programming Data(s) Finished : Fri Feb 28 12:38:46 2020 (Elapsed time 00:00:01)
+The 'load_programming_data' command succeeded.
+Successfully exported PPD file for currently secured device: 'C:\GitHub-LSRAM-12.3\Future-Avalanche-Board\Libero_Projects\MiV_AXI_PF_Avalanche_ES\designer\BaseDesign\BaseDesign.ppd'; file programs Fabric and sNVM.
+BITS component bitstream digest: e628346f15f57b0bb57f2a9a7ba39a841126caa067b4873fa03d218c2fd0001c
+Fabric component bitstream digest: 9afb52869ccc087b6a412cc0e3cb2f4ef4b1fafcef4611b2f7c4b8529b5d70e6
+sNVM component bitstream digest: aa35be3cb1a20b501a2dec798f2c52645802de41d45ffc8ffa141e2efe15029c
+EOB component bitstream digest: d8adf8e4078bbb19abc2f49d962816aa4d0af46818f74a766e1e9a98618a9611
+Finished: Fri Feb 28 12:40:05 2020 (Elapsed time 00:01:19)
+
+The 'export_single_ppd' command succeeded.
+creating folder: C:\GitHub-LSRAM-12.3\Future-Avalanche-Board\Libero_Projects\MiV_AXI_PF_Avalanche_ES\designer\BaseDesign\BaseDesign_fp\projectData
+Project saved.
+The 'save_project' command succeeded.
+Project closed.
+Exported log file C:\GitHub-LSRAM-12.3\Future-Avalanche-Board\Libero_Projects\MiV_AXI_PF_Avalanche_ES\designer\BaseDesign\BaseDesign_fp\BaseDesign.log.
+The 'close_project' command succeeded.
+The Execute Script command succeeded.

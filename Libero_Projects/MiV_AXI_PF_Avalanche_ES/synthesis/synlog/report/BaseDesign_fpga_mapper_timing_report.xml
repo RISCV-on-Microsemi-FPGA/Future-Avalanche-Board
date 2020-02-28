@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- *************************************************************************************
+FILE DESCRIPTION
+Max Top 5 critical clocks will be reported. For rest user needs to refer to Detailed report
+*******************************************************************************************-->
+<report_table display_priority="2" name="Timing Summary">
+<report_link name="Detailed report">
+<data>C:\GitHub-LSRAM-12.3\Future-Avalanche-Board\Libero_Projects\MiV_AXI_PF_Avalanche_ES\synthesis\synlog\BaseDesign_fpga_mapper.srr</data>
+<title>START OF TIMING REPORT</title>
+</report_link>
+<row>
+<data tcl_name="clock_name">Clock Name</data>
+<data tcl_name="req_freq">Req Freq</data>
+<data tcl_name="est_freq">Est Freq</data>
+<data tcl_name="slack">Slack</data>
+</row>
+<row>
+<data>COREJTAGDEBUG_Z11|iUDRCK_inferred_clock</data>
+<data>100.0 MHz</data>
+<data>11.5 MHz</data>
+<data>-38.567</data>
+</row>
+<row>
+<data>PF_CCC_0_inst_0/PF_CCC_0_0/pll_inst_0/OUT0</data>
+<data>50.0 MHz</data>
+<data>64.0 MHz</data>
+<data>4.381</data>
+</row>
+<row>
+<data>PF_OSC_0_inst_0/PF_OSC_0_0/I_OSC_160/CLK</data>
+<data>160.0 MHz</data>
+<data>NA</data>
+<data>NA</data>
+</row>
+<row>
+<data>TCK</data>
+<data>6.0 MHz</data>
+<data>NA</data>
+<data>NA</data>
+</row>
+<row>
+<data>System</data>
+<data>100.0 MHz</data>
+<data>22.5 MHz</data>
+<data>-34.407</data>
+</row>
+</report_table>

@@ -1,0 +1,16 @@
+Project Name: MiV_AXI_BaseDesign
+Location: C:\GitHub-LSRAM-12.3\Future-Avalanche-Board\Libero_Projects\MiV_AXI_PF_Avalanche_ES
+Description: 
+Preferred HDL Type: Verilog
+
+#-----------------------------------------------------
+                  Device Details
+#-----------------------------------------------------
+
+Part Number    : MPF300T_ES-FCG484I
+Family         : PolarFire
+Die            : MPF300T_ES
+Package        : FCG484
+Speed          : STD
+Core Voltage   : 1.0
+Range          : IND

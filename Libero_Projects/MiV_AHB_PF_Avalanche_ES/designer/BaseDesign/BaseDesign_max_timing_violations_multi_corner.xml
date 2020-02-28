@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<?xml-stylesheet href="rptstyle.xsl" type="text/xsl" ?>
+<doc>
+<title>Timing Violation Multi Corner Report Max Delay Analysis
+</title>
+<text>SmartTime Version 12.800.0.16</text>
+<text>Microsemi Corporation - Microsemi Libero Software Release v12.3 (Version 12.800.0.16)</text>
+<text>Date: Tue Feb 25 13:41:23 2020
+</text>
+<table>
+<header>
+</header>
+<row>
+ <cell>Design</cell>
+ <cell>BaseDesign</cell>
+</row>
+<row>
+ <cell>Family</cell>
+ <cell>PolarFire</cell>
+</row>
+<row>
+ <cell>Die</cell>
+ <cell>MPF300T_ES</cell>
+</row>
+<row>
+ <cell>Package</cell>
+ <cell>FCG484</cell>
+</row>
+<row>
+ <cell>Temperature Range</cell>
+ <cell>-40 - 100 C</cell>
+</row>
+<row>
+ <cell>Voltage Range</cell>
+ <cell>0.97 - 1.03 V</cell>
+</row>
+<row>
+ <cell>Speed Grade</cell>
+ <cell>STD</cell>
+</row>
+<row>
+ <cell>Design State</cell>
+ <cell>Post-Layout</cell>
+</row>
+<row>
+ <cell>Data source</cell>
+ <cell>Production</cell>
+</row>
+<row>
+ <cell>Multi Corner Report Operating Conditions</cell>
+ <cell>slow_lv_ht, slow_lv_lt, fast_hv_lt</cell>
+</row>
+<row>
+ <cell>Scenario for Timing Analysis</cell>
+ <cell>timing_analysis</cell>
+</row>
+</table>
+<text></text>
+<table>
+<header>
+ <cell/>
+ <cell>From</cell>
+ <cell>To</cell>
+ <cell>Delay (ns)</cell>
+ <cell>Slack (ns)</cell>
+ <cell>Arrival (ns)</cell>
+ <cell>Required (ns)</cell>
+ <cell>Operating Conditions</cell>
+</header>
+<row>
+ <cell>Path 1</cell>
+ <cell>MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/debug_1/dmOuter/dmOuter/DMCONTROL/reg_1/q:CLK</cell>
+ <cell>MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/tile/genblk1.core/csr/reg_mstatus_mie:EN</cell>
+ <cell>3.114</cell>
+ <cell>-1.277</cell>
+ <cell>13.950</cell>
+ <cell>12.673</cell>
+ <cell>slow_lv_ht</cell>
+</row>
+<row>
+ <cell>Path 2</cell>
+ <cell>MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/debug_1/dmOuter/dmOuter/DMCONTROL/reg_1/q:CLK</cell>
+ <cell>MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/tile/genblk1.core/csr/reg_mstatus_mpie:EN</cell>
+ <cell>3.114</cell>
+ <cell>-1.276</cell>
+ <cell>13.950</cell>
+ <cell>12.674</cell>
+ <cell>slow_lv_ht</cell>
+</row>
+<row>
+ <cell>Path 3</cell>
+ <cell>MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/debug_1/dmOuter/dmOuter/DMCONTROL/reg_1/q:CLK</cell>
+ <cell>MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/tile/genblk1.core/csr/reg_dcsr_cause[0]:EN</cell>
+ <cell>2.938</cell>
+ <cell>-1.097</cell>
+ <cell>13.774</cell>
+ <cell>12.677</cell>
+ <cell>slow_lv_ht</cell>
+</row>
+<row>
+ <cell>Path 4</cell>
+ <cell>MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/debug_1/dmOuter/dmOuter/DMCONTROL/reg_1/q:CLK</cell>
+ <cell>MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/tile/genblk1.core/csr/reg_dcsr_cause[2]:EN</cell>
+ <cell>2.934</cell>
+ <cell>-1.093</cell>
+ <cell>13.770</cell>
+ <cell>12.677</cell>
+ <cell>slow_lv_ht</cell>
+</row>
+<row>
+ <cell>Path 5</cell>
+ <cell>MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/debug_1/dmOuter/dmOuter/DMCONTROL/reg_1/q:CLK</cell>
+ <cell>MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/tile/genblk1.core/csr/reg_dcsr_cause[1]:EN</cell>
+ <cell>2.934</cell>
+ <cell>-1.093</cell>
+ <cell>13.770</cell>
+ <cell>12.677</cell>
+ <cell>slow_lv_ht</cell>
+</row>
+<row>
+ <cell>Path 6</cell>
+ <cell>MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/debug_1/dmOuter/dmOuter/DMCONTROL/reg_1/q:CLK</cell>
+ <cell>MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/tile/frontend/s2_pc_Z[20]:EN</cell>
+ <cell>2.844</cell>
+ <cell>-1.025</cell>
+ <cell>13.680</cell>
+ <cell>12.655</cell>
+ <cell>slow_lv_ht</cell>
+</row>
+<row>
+ <cell>Path 7</cell>
+ <cell>MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/debug_1/dmOuter/dmOuter/DMCONTROL/reg_1/q:CLK</cell>
+ <cell>MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/tile/frontend/s2_pc_Z[17]:EN</cell>
+ <cell>2.843</cell>
+ <cell>-1.024</cell>
+ <cell>13.679</cell>
+ <cell>12.655</cell>
+ <cell>slow_lv_ht</cell>
+</row>
+<row>
+ <cell>Path 8</cell>
+ <cell>MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/debug_1/dmOuter/dmOuter/DMCONTROL/reg_1/q:CLK</cell>
+ <cell>MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/tile/genblk1.core/csr/reg_misa[12]:EN</cell>
+ <cell>2.852</cell>
+ <cell>-1.015</cell>
+ <cell>13.688</cell>
+ <cell>12.673</cell>
+ <cell>slow_lv_ht</cell>
+</row>
+<row>
+ <cell>Path 9</cell>
+ <cell>MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/debug_1/dmOuter/dmOuter/DMCONTROL/reg_1/q:CLK</cell>
+ <cell>MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/tile/genblk1.core/csr/reg_misa[0]:EN</cell>
+ <cell>2.852</cell>
+ <cell>-1.015</cell>
+ <cell>13.688</cell>
+ <cell>12.673</cell>
+ <cell>slow_lv_ht</cell>
+</row>
+<row>
+ <cell>Path 10</cell>
+ <cell>MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/debug_1/dmOuter/dmOuter/DMCONTROL/reg_1/q:CLK</cell>
+ <cell>MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/tile/dcache/flushed:EN</cell>
+ <cell>2.850</cell>
+ <cell>-1.015</cell>
+ <cell>13.686</cell>
+ <cell>12.671</cell>
+ <cell>slow_lv_ht</cell>
+</row>
+<row>
+ <cell>Path 11</cell>
+ <cell>MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/debug_1/dmOuter/dmOuter/DMCONTROL/reg_1/q:CLK</cell>
+ <cell>MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/tile/frontend/s2_pc_Z[8]:EN</cell>
+ <cell>2.841</cell>
+ <cell>-1.012</cell>
+ <cell>13.677</cell>
+ <cell>12.665</cell>
+ <cell>slow_lv_ht</cell>
+</row>
+<row>
+ <cell>Path 12</cell>
+ <cell>MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/debug_1/dmOuter/dmOuter/DMCONTROL/reg_1/q:CLK</cell>
+ <cell>MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/tile/frontend/s2_pc_Z[14]:EN</cell>
+ <cell>2.841</cell>
+ <cell>-1.012</cell>
+ <cell>13.677</cell>
+ <cell>12.665</cell>
+ <cell>slow_lv_ht</cell>
+</row>
+<row>
+ <cell>Path 13</cell>
+ <cell>MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/debug_1/dmOuter/dmOuter/DMCONTROL/reg_1/q:CLK</cell>
+ <cell>MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/tile/frontend/s2_pc_Z[6]:EN</cell>
+ <cell>2.841</cell>
+ <cell>-1.011</cell>
+ <cell>13.677</cell>
+ <cell>12.666</cell>
+ <cell>slow_lv_ht</cell>
+</row>
+<row>
+ <cell>Path 14</cell>
+ <cell>MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/debug_1/dmOuter/dmOuter/DMCONTROL/reg_1/q:CLK</cell>
+ <cell>MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/tile/frontend/s2_pc_Z[5]:EN</cell>
+ <cell>2.840</cell>
+ <cell>-1.010</cell>
+ <cell>13.676</cell>
+ <cell>12.666</cell>
+ <cell>slow_lv_ht</cell>
+</row>
+<row>
+ <cell>Path 15</cell>
+ <cell>MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/debug_1/dmOuter/dmOuter/DMCONTROL/reg_1/q:CLK</cell>
+ <cell>MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/tile/frontend/icache/_T_174[5]:EN</cell>
+ <cell>2.823</cell>
+ <cell>-0.992</cell>
+ <cell>13.659</cell>
+ <cell>12.667</cell>
+ <cell>slow_lv_ht</cell>
+</row>
+<row>
+ <cell>Path 16</cell>
+ <cell>MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/debug_1/dmOuter/dmOuter/DMCONTROL/reg_1/q:CLK</cell>
+ <cell>MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/tile/frontend/icache/_T_174[6]:EN</cell>
+ <cell>2.823</cell>
+ <cell>-0.992</cell>
+ <cell>13.659</cell>
+ <cell>12.667</cell>
+ <cell>slow_lv_ht</cell>
+</row>
+<row>
+ <cell>Path 17</cell>
+ <cell>MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/debug_1/dmOuter/dmOuter/DMCONTROL/reg_1/q:CLK</cell>
+ <cell>MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/tile/frontend/icache/_T_174[0]:EN</cell>
+ <cell>2.822</cell>
+ <cell>-0.991</cell>
+ <cell>13.658</cell>
+ <cell>12.667</cell>
+ <cell>slow_lv_ht</cell>
+</row>
+<row>
+ <cell>Path 18</cell>
+ <cell>MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/debug_1/dmOuter/dmOuter/DMCONTROL/reg_1/q:CLK</cell>
+ <cell>MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/tile/frontend/icache/_T_174[4]:EN</cell>
+ <cell>2.822</cell>
+ <cell>-0.991</cell>
+ <cell>13.658</cell>
+ <cell>12.667</cell>
+ <cell>slow_lv_ht</cell>
+</row>
+<row>
+ <cell>Path 19</cell>
+ <cell>MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/debug_1/dmOuter/dmOuter/DMCONTROL/reg_1/q:CLK</cell>
+ <cell>MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/tile/frontend/icache/_T_174[7]:EN</cell>
+ <cell>2.822</cell>
+ <cell>-0.991</cell>
+ <cell>13.658</cell>
+ <cell>12.667</cell>
+ <cell>slow_lv_ht</cell>
+</row>
+<row>
+ <cell>Path 20</cell>
+ <cell>MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/debug_1/dmOuter/dmOuter/DMCONTROL/reg_1/q:CLK</cell>
+ <cell>MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/tile/frontend/s2_pc_Z[24]:EN</cell>
+ <cell>2.801</cell>
+ <cell>-0.972</cell>
+ <cell>13.637</cell>
+ <cell>12.665</cell>
+ <cell>slow_lv_ht</cell>
+</row>
+</table>
+<text></text>
+</doc>
