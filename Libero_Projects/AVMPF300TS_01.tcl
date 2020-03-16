@@ -1,10 +1,10 @@
-set project_folder_name_axi MiV_AXI_PF_Avalanche_ES
+set project_folder_name_axi MiV_AXI_BD
 set project_dir_axi "./$project_folder_name_axi"
-set Libero_project_name_axi MiV_AXI_BaseDesign
+set Libero_project_name_axi PF_Avalanche_ES_MiV_AXI_BaseDesign
 
-set project_folder_name_ahb MiV_AHB_PF_Avalanche_ES
+set project_folder_name_ahb MiV_AHB_BD
 set project_dir_ahb "./$project_folder_name_ahb"
-set Libero_project_name_ahb MiV_AHB_BaseDesign
+set Libero_project_name_ahb PF_Avalanche_ES_MiV_AHB_BaseDesign
 
 set target [string toupper [lindex $argv 0]]
 set design_flow_stage [string toupper [lindex $argv 1]]
@@ -52,9 +52,9 @@ proc invalid_argument { }\
 if {"$target" == "AHB"} then {
 	if {[file exists $project_dir_ahb] == 1} then {
 		project_exists
-	} else { 
-		create_new_project_label_ahb  
-		new_project -location $project_dir_ahb -name $Libero_project_name_ahb -project_description {} -block_mode 0 -standalone_peripheral_initialization 0 -instantiate_in_smartdesign 1 -ondemand_build_dh 1 -hdl {VERILOG} -family {PolarFire} -die {MPF300T_ES} -package {FCG484} -speed {STD} -die_voltage {1.0} -part_range {IND} -adv_options {IO_DEFT_STD:LVCMOS 1.8V} -adv_options {RESTRICTPROBEPINS:1} -adv_options {RESTRICTSPIPINS:0} -adv_options {TEMPR:IND} -adv_options {UNUSED_MSS_IO_RESISTOR_PULL:None} -adv_options {VCCI_1.2_VOLTR:EXT} -adv_options {VCCI_1.5_VOLTR:EXT} -adv_options {VCCI_1.8_VOLTR:EXT} -adv_options {VCCI_2.5_VOLTR:EXT} -adv_options {VCCI_3.3_VOLTR:EXT} -adv_options {VOLTR:IND} 
+	} else {
+		create_new_project_label_ahb
+		new_project -location $project_dir_ahb -name $Libero_project_name_ahb -project_description {} -block_mode 0 -standalone_peripheral_initialization 0 -instantiate_in_smartdesign 1 -ondemand_build_dh 1 -hdl {VERILOG} -family {PolarFire} -die {MPF300T_ES} -package {FCG484} -speed {STD} -die_voltage {1.0} -part_range {IND} -adv_options {IO_DEFT_STD:LVCMOS 1.8V} -adv_options {RESTRICTPROBEPINS:1} -adv_options {RESTRICTSPIPINS:0} -adv_options {TEMPR:IND} -adv_options {UNUSED_MSS_IO_RESISTOR_PULL:None} -adv_options {VCCI_1.2_VOLTR:EXT} -adv_options {VCCI_1.5_VOLTR:EXT} -adv_options {VCCI_1.8_VOLTR:EXT} -adv_options {VCCI_2.5_VOLTR:EXT} -adv_options {VCCI_3.3_VOLTR:EXT} -adv_options {VOLTR:IND}
 		source ./import/components/AHB/import_component_and_constraints_pf_avalanche_es_ahb.tcl
 		save_project
 		puts "-------------------------------------------------------------------------"
@@ -67,8 +67,8 @@ if {"$target" == "AHB"} then {
 	if {[file exists $project_dir_axi] == 1} then {
 		project_exists
 	} else {
-		create_new_project_label_axi  
-		new_project -location $project_dir_axi -name $Libero_project_name_axi -project_description {} -block_mode 0 -standalone_peripheral_initialization 0 -instantiate_in_smartdesign 1 -ondemand_build_dh 1 -hdl {VERILOG} -family {PolarFire} -die {MPF300T_ES} -package {FCG484} -speed {STD} -die_voltage {1.0} -part_range {IND} -adv_options {IO_DEFT_STD:LVCMOS 1.8V} -adv_options {RESTRICTPROBEPINS:1} -adv_options {RESTRICTSPIPINS:0} -adv_options {TEMPR:IND} -adv_options {UNUSED_MSS_IO_RESISTOR_PULL:None} -adv_options {VCCI_1.2_VOLTR:EXT} -adv_options {VCCI_1.5_VOLTR:EXT} -adv_options {VCCI_1.8_VOLTR:EXT} -adv_options {VCCI_2.5_VOLTR:EXT} -adv_options {VCCI_3.3_VOLTR:EXT} -adv_options {VOLTR:IND} 
+		create_new_project_label_axi
+		new_project -location $project_dir_axi -name $Libero_project_name_axi -project_description {} -block_mode 0 -standalone_peripheral_initialization 0 -instantiate_in_smartdesign 1 -ondemand_build_dh 1 -hdl {VERILOG} -family {PolarFire} -die {MPF300T_ES} -package {FCG484} -speed {STD} -die_voltage {1.0} -part_range {IND} -adv_options {IO_DEFT_STD:LVCMOS 1.8V} -adv_options {RESTRICTPROBEPINS:1} -adv_options {RESTRICTSPIPINS:0} -adv_options {TEMPR:IND} -adv_options {UNUSED_MSS_IO_RESISTOR_PULL:None} -adv_options {VCCI_1.2_VOLTR:EXT} -adv_options {VCCI_1.5_VOLTR:EXT} -adv_options {VCCI_1.8_VOLTR:EXT} -adv_options {VCCI_2.5_VOLTR:EXT} -adv_options {VCCI_3.3_VOLTR:EXT} -adv_options {VOLTR:IND}
 		source ./import/components/AXI/import_component_and_constraints_pf_avalanche_es_axi.tcl
 		save_project
 		puts "-------------------------------------------------------------------------"
@@ -89,8 +89,8 @@ if {"$target" == "AHB"} then {
 	if {[file exists $project_dir_ahb] == 1} then {
 		project_exists
 	} else {
-		create_new_project_label_ahb  
-		new_project -location $project_dir_ahb -name $Libero_project_name_ahb -project_description {} -block_mode 0 -standalone_peripheral_initialization 0 -instantiate_in_smartdesign 1 -ondemand_build_dh 1 -hdl {VERILOG} -family {PolarFire} -die {MPF300T_ES} -package {FCG484} -speed {STD} -die_voltage {1.0} -part_range {IND} -adv_options {IO_DEFT_STD:LVCMOS 1.8V} -adv_options {RESTRICTPROBEPINS:1} -adv_options {RESTRICTSPIPINS:0} -adv_options {TEMPR:IND} -adv_options {UNUSED_MSS_IO_RESISTOR_PULL:None} -adv_options {VCCI_1.2_VOLTR:EXT} -adv_options {VCCI_1.5_VOLTR:EXT} -adv_options {VCCI_1.8_VOLTR:EXT} -adv_options {VCCI_2.5_VOLTR:EXT} -adv_options {VCCI_3.3_VOLTR:EXT} -adv_options {VOLTR:IND} 
+		create_new_project_label_ahb
+		new_project -location $project_dir_ahb -name $Libero_project_name_ahb -project_description {} -block_mode 0 -standalone_peripheral_initialization 0 -instantiate_in_smartdesign 1 -ondemand_build_dh 1 -hdl {VERILOG} -family {PolarFire} -die {MPF300T_ES} -package {FCG484} -speed {STD} -die_voltage {1.0} -part_range {IND} -adv_options {IO_DEFT_STD:LVCMOS 1.8V} -adv_options {RESTRICTPROBEPINS:1} -adv_options {RESTRICTSPIPINS:0} -adv_options {TEMPR:IND} -adv_options {UNUSED_MSS_IO_RESISTOR_PULL:None} -adv_options {VCCI_1.2_VOLTR:EXT} -adv_options {VCCI_1.5_VOLTR:EXT} -adv_options {VCCI_1.8_VOLTR:EXT} -adv_options {VCCI_2.5_VOLTR:EXT} -adv_options {VCCI_3.3_VOLTR:EXT} -adv_options {VOLTR:IND}
 		source ./import/components/AHB/import_component_and_constraints_pf_avalanche_es_ahb.tcl
 		save_project
 		puts "-------------------------------------------------------------------------"
@@ -101,7 +101,7 @@ if {"$target" == "AHB"} then {
 	}
 }
 
-	
+
 if {"$design_flow_stage" == "SYNTHESIZE"} then {
 	puts " "
     puts "-------------------------------------------------------------------------"
@@ -120,7 +120,7 @@ if {"$design_flow_stage" == "SYNTHESIZE"} then {
     puts "---------------------------SYNTHESIZED!----------------------------------"
     puts "-------------------------------------------------------------------------"
 	puts " "
-	
+
 } elseif {"$design_flow_stage" == "PLACE_AND_ROUTE"} then {
 	puts " "
     puts "-------------------------------------------------------------------------"
@@ -130,17 +130,17 @@ if {"$design_flow_stage" == "SYNTHESIZE"} then {
 
 	# Configuring Place_and_Route tool for a timing pass.
 	configure_tool -name {PLACEROUTE} -params {EFFORT_LEVEL:true} -params {REPAIR_MIN_DELAY:true} -params {TDPR:true} -params {IOREG_COMBINING:true}
-	# ##	
+	# ##
 	run_tool -name {PLACEROUTE}
 	save_project
-	
+
 	puts " "
     puts "-------------------------------------------------------------------------"
     puts "----------------------DESIGN PLACED AND ROUTED!--------------------------"
     puts "-------------------------------------------------------------------------"
 	puts " "
 
-	
+
 } elseif {"$design_flow_stage" == "GENERATE_BITSTREAM"} then {
 	puts " "
     puts "-------------------------------------------------------------------------"
@@ -150,11 +150,11 @@ if {"$design_flow_stage" == "SYNTHESIZE"} then {
 
 	# Configuring Place_and_Route tool for a timing pass.
 	configure_tool -name {PLACEROUTE} -params {EFFORT_LEVEL:true} -params {REPAIR_MIN_DELAY:true} -params {TDPR:true} -params {IOREG_COMBINING:true}
-	# ##	
+	# ##
     run_tool -name {GENERATEPROGRAMMINGDATA}
     run_tool -name {GENERATEPROGRAMMINGFILE}
     save_project
-	
+
 	puts " "
     puts "-------------------------------------------------------------------------"
     puts "--------------------PROGRAMMING FILES GENERATED!-------------------------"
@@ -171,7 +171,7 @@ if {"$design_flow_stage" == "SYNTHESIZE"} then {
 
 # Configuring Place_and_Route tool for a timing pass.
 configure_tool -name {PLACEROUTE} -params {EFFORT_LEVEL:true} -params {REPAIR_MIN_DELAY:true} -params {TDPR:true} -params {IOREG_COMBINING:true}
-# ##	
+# ##
 # pre-requisite to enable exporting programming file function
     run_tool -name {GENERATEPROGRAMMINGDATA}
     run_tool -name {GENERATEPROGRAMMINGFILE}
@@ -184,7 +184,7 @@ configure_tool -name {PLACEROUTE} -params {EFFORT_LEVEL:true} -params {REPAIR_MI
 			-bitstream_file_type {TRUSTED_FACILITY} \
 			-bitstream_file_components {}
 		save_project
-		
+
 	} else {
 		export_prog_job \
 			-job_file_name {BaseDesign_PF_Avalanche_ES_AXI_ProgramFile} \
@@ -193,7 +193,7 @@ configure_tool -name {PLACEROUTE} -params {EFFORT_LEVEL:true} -params {REPAIR_MI
 			-bitstream_file_components {}
 		save_project
 	}
-	
+
 	puts " "
     puts "-------------------------------------------------------------------------"
     puts "--------------------PROGRAMMING FILES EXPORTED!--------------------------"
@@ -228,9 +228,9 @@ configure_tool -name {PLACEROUTE} -params {EFFORT_LEVEL:true} -params {REPAIR_MI
 		puts "-------------------------------------------------------------------------"
 		puts "-------------------------------------------------------------------------"
 
-	
+
 	} elseif {"$target" == "AXI"} then {
-	
+
 		puts " "
 		puts " "
 		puts " "
@@ -254,7 +254,7 @@ configure_tool -name {PLACEROUTE} -params {EFFORT_LEVEL:true} -params {REPAIR_MI
 		puts "-------------------------SCRIPT EXECUTED!--------------------------------"
 		puts "-------------------------------------------------------------------------"
 		puts "-------------------------------------------------------------------------"
-	
+
 	} else {
 		puts " "
 		puts " "
@@ -272,4 +272,3 @@ configure_tool -name {PLACEROUTE} -params {EFFORT_LEVEL:true} -params {REPAIR_MI
 
 	}
 }
-
