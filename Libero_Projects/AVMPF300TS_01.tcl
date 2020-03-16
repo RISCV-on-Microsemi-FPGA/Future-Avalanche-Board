@@ -178,7 +178,7 @@ configure_tool -name {PLACEROUTE} -params {EFFORT_LEVEL:true} -params {REPAIR_MI
 	} else {
 		export_prog_job \
 			-job_file_name {PF_Avalanche_ES_MiV_AXI_BaseDesign} \
-			-export_dir {./MiV_AHB_BD/designer/BaseDesign/export} \
+			-export_dir {./MiV_AXI_BD/designer/BaseDesign/export} \
 			-bitstream_file_type {TRUSTED_FACILITY} \
 			-bitstream_file_components {}
 		save_project
