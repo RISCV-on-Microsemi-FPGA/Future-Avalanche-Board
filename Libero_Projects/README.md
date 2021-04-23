@@ -1,8 +1,8 @@
 ## Future Avalanche Board Mi-V Sample FPGA Designs
-This folder contains Tcl scripts that build Libero SoC v12.6 design projects for the Future Avalanche Board. These scripts are executed in Libero SoC to generate the sample designs. All cores boot from memory at 0x8000_0000.
+This folder contains Tcl scripts that build Libero SoC v2021.1 design projects for the Future Avalanche Board. These scripts are executed in Libero SoC to generate the sample designs. All cores boot from memory at 0x8000_0000.
 
 
-#### PF_Avalanche_ES_MiV_RV32IMA_BaseDesign
+#### PF_Avalanche_ES_MIV_RV32IMA_BaseDesign
 
 | Config  | Description |
 | :------:|:------------|
@@ -10,7 +10,7 @@ This folder contains Tcl scripts that build Libero SoC v12.6 design projects for
 | CFG2    |This design uses the MIV_RV32IMA_L1_AXI core with an **AXI3** interface for memory and peripherals|
 
 
-#### PF_Avalanche_ES_MiV_RV32IMAF_BaseDesign
+#### PF_Avalanche_ES_MIV_RV32IMAF_BaseDesign
 
 | Config  |Description |
 | :------:|:-----------|
@@ -18,7 +18,7 @@ This folder contains Tcl scripts that build Libero SoC v12.6 design projects for
 
 
 
-#### PF_Avalanche_ES_MiV_RV32_BaseDesign
+#### PF_Avalanche_ES_MIV_RV32_BaseDesign
 
 
 | Config  | Description|
