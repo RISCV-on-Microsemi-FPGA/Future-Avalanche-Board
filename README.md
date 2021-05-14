@@ -2,9 +2,11 @@
 
 This repository contains Libero projects for the following soft core RISC-V processors:
 * MIV_RV32
-* MIV_RV32IMA_L1_AHB
-* MIV_RV32IMA_L1_AXI
-* MIV_RV32IMAF_L1_AHB
+* MIV_RV32IMA_L1_AHB * 
+* MIV_RV32IMA_L1_AXI * 
+* MIV_RV32IMAF_L1_AHB *
+
+\*Legacy cores. MIV_RV32 recommended for new designs
 
 FlashPro Express projects containing pre-generated programming files are also available for each of the designs.
 
@@ -18,7 +20,7 @@ To download or clone the repository:
 
 
 # Libero Projects
-The Libero_Projects folder contains sample Mi-V Libero designs for Libero v12.6. Libero projects for older Libero releases can be downloaded from their [tags](https://github.com/RISCV-on-Microsemi-FPGA/Future-Avalanche-Board/releases) in this repository.
+The Libero_Projects folder contains sample Mi-V Libero designs for Libero v2021.1. Libero projects for older Libero releases can be downloaded from their [tags](https://github.com/RISCV-on-Microsemi-FPGA/Future-Avalanche-Board/releases) in this repository.
 
 ## Design Features
 The Libero designs include the following features:
@@ -38,7 +40,7 @@ The FlashPro_Express_Projects folder contains the pre-generated programming file
 # Design Tools
 The following design tools are required.
 
-## Libero SoC v12.6
+## Libero SoC v2021.1
 [Libero SoC](https://www.microsemi.com/products/fpga-soc/design-resources/design-software/libero-soc#downloads) is Microchip's FPGA design software.
 
 ## FlashPro Express
